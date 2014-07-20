@@ -21,3 +21,5 @@ while True:
                     print "Submitting", submission.url
                     r.submit(targetSubreddit, submission.title + '[X-POST /r/' + subreddit + ']', url = submission.url)
         time.sleep(600)
+    except:
+        pass
