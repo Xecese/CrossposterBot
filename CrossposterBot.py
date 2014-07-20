@@ -19,5 +19,5 @@ while True:
                 if (submission.id not in alreadyDone):
                     alreadyDone.add(submission.id)
                     print "Submitting", submission.url
-                    r.submit(targetSubreddit, submission.title + '[X-POST r\/' + subreddit + ']', url = submission.url)
+                    r.submit(targetSubreddit, submission.title + '[X-POST /r/' + subreddit + ']', url = submission.url)
         time.sleep(600)
